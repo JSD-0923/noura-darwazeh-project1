@@ -1,0 +1,325 @@
+:root {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #ffffff;
+  --bg_body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+
+}
+.dark-mode {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #1a1a1a;
+  --bg_body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+  --heart-color: #dc143c;
+}
+
+body{
+  font-family: 'Nunito Sans';
+  color: var(--body-text);
+  background-color: var( --bg_default);
+
+}
+.header-container{
+  display: flex;
+  /* background-color: var( --bg_default); */
+}
+.header-container  p{
+  margin-left: 30px;
+  margin-top: 15px;
+  color:var(--brand-primary);
+  font-weight: bold; 
+  font-size: larger; 
+}
+.header-container button{
+  border: 1px solid var(--lines-color);
+  border-radius: 5px;
+  background-color: var( --bg_default);
+  color: var(--body-text);
+  height: 30px;
+  margin-top: 15px;
+  border: 1px solid var(--lines-color);
+  border-radius: 10px;
+}
+.header-container .favourites-button
+{
+    margin-left: 5px;
+}
+.header-container .dark-mode-button{
+    margin-left: 73vw;
+
+}
+/* .welcome-block
+{
+  background-color: var( --bg_default);
+
+} */
+.triangle-blue {
+  position: absolute;
+    left: 0;
+    margin-top: -63px;
+    width: 0;
+    height: 0;
+    border-left: 89vw solid var(--brand-primary);
+    
+    border-right: 0vw;
+    border-bottom: 6vw solid transparent;
+    border-top: 0px solid transparent;
+    z-index: 2;
+}
+.triangle-container{
+  position: relative;
+}
+.triangle-green {
+  
+    position: absolute;
+    left: 0;
+    margin-top: -73px;
+    width: 12vw;
+    height: 10px;
+    border-left: 86vw solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 3vw solid var(--brand-secondary);
+    ;
+    border-top: 0px solid transparent;
+    z-index: 1;
+
+}
+.the-welcome .welcome-msg{
+  color:var(--brand-secondary);
+  margin-top: 5vw;
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  
+}
+.paragraph-under-header{
+  margin-top: -15px;
+  margin-left: 42vw;
+}
+.main-body{
+ background-color:var(--bg_body);
+ 
+}
+.search-input-icon{
+  display: flex;
+}
+.search-input-icon input{
+  border: none;
+  width: 65vw;
+  background-color: var( --bg_default);
+
+}
+.sortlabel-sortselect{
+border:none;
+border-right: 1px solid  var(--lines-color);
+border-left: 1px solid var(--lines-color);
+background-color: var( --bg_default);
+}
+.sortlabel-sortselect label{
+  display: block;
+  font-size: 10px;
+  margin-left: 11px;
+  font-weight: 600;
+}
+.sortlabel-sortselect select{
+  display: block;
+  border: none;
+  width: 12vw;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  background-color: var( --bg_default);
+  color: var(--body-text);
+
+
+}
+.filterlabel-filterselect{
+  background-color: var( --bg_default);
+  border: none;
+  border-right: 1px solid  var(--lines-color);
+  box-shadow: 0px 0px 10px  var(--lines-color);
+  border-top-right-radius: 10px;
+
+}
+.filterlabel-filterselect label{
+  display: block;
+  font-size: 10px;
+  margin-left: 11px;
+  font-weight: 600;
+}
+.filterlabel-filterselect select{
+  display: block;
+  border: none;
+  width: 11vw;
+  padding-left: 5px;
+  background-color: var( --bg_default);
+  color: var(--body-text);
+
+}
+.search-input-icon ion-icon{
+  margin-top: 9px;
+  margin-left: 3px;
+}
+
+
+form{
+  width: 90vw;
+  display: flex;
+  border: 1px solid var(--lines-color);
+  background-color: var( --bg_default);
+
+  box-shadow: 0px 0px 10px var(--lines-color);
+  border-radius: 10px;
+
+}
+
+.container-search{
+margin-left: 50px;
+padding-top: 15px;
+}
+
+.all-topics h2{
+  margin-left: 50px;
+}
+.first-topic{
+  border: 1px solid var(--lines-color);
+  box-shadow: 0px 0px 10px var(--lines-color);
+  border-radius: 10px;
+  display: inline-block;
+  width: 15%;
+  background-color: var( --bg_default);
+  margin-left: 50px;
+  margin-top: 20px;
+  position: relative;
+}
+.first-topic-img{
+  height: 200px;
+}
+.first-topic-img img{
+  width: 100%;
+  height: 100%;
+
+} 
+.first-topic-descreption  p{
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.icon ion-icon{
+  color: goldenrod;
+  margin-left: 15px;
+  padding-right: 0;
+  margin-right: 2px;
+  }
+.author{
+  color: gray;
+  font-weight: bold;
+}
+
+.footer-paragraph{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+.footer-paragraph ion-icon
+{
+  color:var(--heart-color);
+}
+/* وتنسيش اني عملت الفيرست توبك ريلاتيف للفيفاريت*/
+.footer2{
+  background-color: var( --bg_default);
+  width: 100%;
+  position: absolute;
+  height: 40%;
+  top:86vw;
+
+}
+.fav{
+  display: flex;
+}
+.favourite-react ,.favourite-cloud{
+  height: 30%;
+  width: 15%;
+  background-color: var( --bg_default);
+  margin-left: 35px;
+  border: 1px solid var(--lines-color);
+  box-shadow: 0px 0px 10px var(--lines-color);
+  border-radius: 10px;
+    
+
+}
+.favourite-react-img,.favourite-cloud-img{
+  height: 100px;
+}
+.favourite-react-img img,.favourite-cloud-img img{
+  width: 100%;
+  height: 100%;
+
+}
+.favourite-react-descreption,.favourite-cloud-descreption{
+  color: var(--body-text);
+  font-weight: bold;
+  margin-left: 8px;
+}
+.footer2 > p{
+  margin-left: 40px;
+  color: var(--body-text);
+  font-weight: bold;
+  
+}
+/*نهاية لفيفاريت*/
+@media (max-width : 786px)
+{
+  .header-container  p{
+  margin-left: 26px;
+  margin-top: 15px;
+  }
+
+  .triangle-blue {
+    
+      margin-top: -27px;
+      
+  }
+  .triangle-green {
+    margin-top: -38px;
+   }
+  .header-container .dark-mode-button{
+      margin-left: 53vw;
+  }
+  .paragraph-under-header{
+    margin-top: -15px;
+    margin-left: 38vw;
+  }
+  form{
+    width: 70vw;
+    
+  
+  }
+  .first-topic{
+    width: 11%;
+    margin-left: 59px;
+    margin-top: 20px;
+  }
+  .search-input-icon input{
+    width: 61vw;
+  }
+  
+  
+  .sortlabel-sortselect select{
+    display: block;
+    border: none;
+    width: 12vw;
+    padding-left: 5px;
+    padding-bottom: 5px;
+  
+  }
+}
+
+
+
+  
