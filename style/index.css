@@ -438,6 +438,7 @@ form {
 }
 .footer2 {
   position: static;
+  top:60vw;
 }
 }
 /* responsive more than 1024px */
