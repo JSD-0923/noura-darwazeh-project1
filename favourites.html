@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favourites</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,10 +16,11 @@
         <p>Web Topics</p>
         <button class="dark-mode-button" id="btn">
             <ion-icon class="moon" name="moon-outline"></ion-icon>
-            Dark Mode</button>
+            <span>
+            Dark Mode</span></button>
         <button class="favourites-button">
             <ion-icon class="heart" name="heart-outline"></ion-icon>
-                Favourites
+                <span>Favourites</span>
         </button>
         
     </div>
@@ -48,7 +49,7 @@
                     <ion-icon name="search-outline"></ion-icon>
                     <input  type="text" placeholder="   Search the website..." autofocus>
                 </div>
-                
+                <div class="the-select">
                 <div class="sortlabel-sortselect">
                     <label class="select-label" for="select"> Sort by:</label> 
                     <select class="select-op-sort-by">
@@ -65,6 +66,7 @@
                     <option value="val3">hu</option>
                     </select> 
                 </div>
+                </div>
             </form>
         </div>
         
@@ -74,292 +76,293 @@
         <h2>"24" Web Topics Found</h2>
 
         <div class="cards">
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/html.png" alt="this is html">
-            </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <div class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                <!-- <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i> -->
-
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/html.png" alt="this is html">
                 </div>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
+                <div class="first-topic-descreption">
+                    <p> Web Development Languages <br><span style="font-size: 14px; font-weight: 1000;">HTML</span> </p>
+                    <div class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <!-- <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i> -->
+    
+                    </div>
+                    <p class="author">Author: Sarah Smith</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-        </div>
-
-
-
-
-
-<!-- second one: -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/css.PNG" alt="this is html">
+    
+    
+    
+    
+    
+    <!-- second one: -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/css.PNG" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Web Development Languages <br><span style="font-size: 14px; font-weight: 1000;">CSS</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: David Lee</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
+    
+    
+    <!-- third-one -->
+    
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/javascript.jpg" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Web Development Languages <br><span style="font-size: 14px; font-weight: 1000;">JavaScript</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author:Emily Chen</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-        </div>
-
-
-<!-- third-one -->
-
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/javascript.jpg" alt="this is html">
+    
+    <!-- fourth  -->
+    
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/jquery.png" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Frontend Framworks and Libraries <br><span style="font-size: 14px; font-weight: 1000;">jQuery</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: John Johnson</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
+    
+    <!-- 5: -->
+    
+    
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/angular.png" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Frontend Framworks and Libraries <br><span style="font-size: 14px; font-weight: 1000;">Angular</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Jassica Davis</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-        </div>
-
-<!-- fourth  -->
-
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/jquery.png" alt="this is html">
+    <!-- 6: -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/react.PNG" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Frontend Framworks and Libraries <br><span style="font-size: 14px; font-weight: 1000;">React</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Daniel Brown</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
+            <!-- 7: -->
+    
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/vuejs.jpeg" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Frontend Framworks and Libraries <br><span style="font-size: 14px; font-weight: 1000;">Vue.js</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Ava jones</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-        </div>
-
-<!-- 5: -->
-
-
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/angular.png" alt="this is html">
+    
+            <!-- 8: -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/node.PNG" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Backend Framworks and Libraries <br><span style="font-size: 14px; font-weight: 1000;">HTML</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Michael Kim</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
+            <!-- 9: -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/express.PNG" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Backend Framworks and Libraries <br><span style="font-size: 14px; font-weight: 1000;">Express.js</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Sophia Rodriguez</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-        </div>
-<!-- 6: -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/react.PNG" alt="this is html">
+            <!-- 10: -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/ruby.jpeg" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Backend Framworks and Libraries <br><span style="font-size: 14px; font-weight: 1000;">Ruby on Rails</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: William Lee</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
+    
+            <!-- 11: -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/django.jpeg" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Backend Framworks and Libraries <br><span style="font-size: 14px; font-weight: 1000;">Django</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Olivia Martinez</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-        </div>
-        <!-- 7: -->
-
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/vuejs.jpeg" alt="this is html">
+            <!-- 12 -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/flask.PNG" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Backend Framworks and Libraries <br><span style="font-size: 14px; font-weight: 1000;">Flask</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Ethan Thompson</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
+            <!-- 13 -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/sql.png" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Databases and APIs <br><span style="font-size: 14px; font-weight: 1000;">SQL</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Madison Davis</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-        </div>
-
-        <!-- 8: -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/node.PNG" alt="this is html">
+            <!-- 14 -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/nosql.png" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Databases and APIs <br><span style="font-size: 14px; font-weight: 1000;">NoSQL</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Isabella Wilson</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
-            </div>
-        </div>
-        <!-- 9: -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/express.PNG" alt="this is html">
-            </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
-            </div>
-        </div>
-        <!-- 10: -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/ruby.jpeg" alt="this is html">
-            </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
-            </div>
-        </div>
-
-        <!-- 11: -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/django.jpeg" alt="this is html">
-            </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
-            </div>
-        </div>
-        <!-- 12 -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/flask.PNG" alt="this is html">
-            </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
-            </div>
-        </div>
-        <!-- 13 -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/sql.png" alt="this is html">
-            </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
-            </div>
-        </div>
-        <!-- 14 -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/nosql.png" alt="this is html">
-            </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
-            </div>
-        </div>
-        <!-- 15 -->
-        <div class="first-topic">
-            <div class="first-topic-img">
-                <img src="img/restapi.jpeg" alt="this is html">
-            </div>
-            <div class="first-topic-descreption">
-                <p> Web Development Languages <br><span style="font-size: 17px; font-weight: 1000;">HTML</span> </p>
-                <span class="icon">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                </span>
-                <p class="author">Author: Sarah Smith</p>
-                <!-- <p>HTML</p> -->
+            <!-- 15 -->
+            <div class="first-topic">
+                <div class="first-topic-img">
+                    <img src="img/restapi.jpeg" alt="this is html">
+                </div>
+                <div class="first-topic-descreption">
+                    <p> Darabases and APIs <br><span style="font-size: 14px; font-weight: 1000;">REST APIs</span> </p>
+                    <span class="icon">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <p class="author">Author: Jacob Garcia</p>
+                    <!-- <p>HTML</p> -->
+                </div>
             </div>
         </div>
         </div>

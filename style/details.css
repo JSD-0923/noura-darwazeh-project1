@@ -1,0 +1,458 @@
+:root {
+    --brand-primary: #0768ac;
+    --brand-secondary: #03c180;
+    --bg_default: #ffffff;
+    --bg_body: #f0f9ff;
+    --lines-color: #dddddd;
+    --body-text: #333333;
+    --heart-color: #dc143c;
+  
+  }
+  .dark-mode {
+    --brand-primary: #0768ac;
+    --brand-secondary: #03c180;
+    --bg_default: #1a1a1a;
+    --bg_body: #282828;
+    --lines-color: #000000;
+    --body-text: #ededed;
+    --heart-color: #dc143c;
+  }
+  
+  body{
+    font-family: 'Nunito Sans';
+    color: var(--body-text);
+    background-color: var( --bg_default);
+  
+  }
+  .header-container{
+    display: flex;
+  }
+  .header-container  p{
+    margin-left: 30px;
+    margin-top: 15px;
+    color:var(--brand-primary);
+    font-weight: bold; 
+    font-size: larger; 
+  }
+  .header-container button{
+    border: 1px solid var(--lines-color);
+    border-radius: 5px;
+    background-color: var( --bg_default);
+    color: var(--body-text);
+    height: 30px;
+    margin-top: 15px;
+    border: 1px solid var(--lines-color);
+    border-radius: 10px;
+  }
+  .header-container .favourites-button
+  {
+      margin-left: 5px;
+  }
+  .header-container .dark-mode-button{
+      margin-left: 72vw;
+  
+  }
+  
+  .triangle-blue {
+    position: absolute;
+      left: 0;
+      margin-top: -63px;
+      width: 0;
+      height: 0;
+      border-left: 89vw solid var(--brand-primary);
+      
+      border-right: 0vw;
+      border-bottom: 6vw solid transparent;
+      border-top: 0px solid transparent;
+      z-index: 2;
+  }
+  .triangle-container{
+    position: relative;
+  }
+  .triangle-green {
+    
+      position: absolute;
+      left: 0;
+      margin-top: -73px;
+      width: 12vw;
+      height: 10px;
+      border-left: 86vw solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 3vw solid var(--brand-secondary);
+      ;
+      border-top: 0px solid transparent;
+      z-index: 1;
+  
+  }
+  .the-welcome .welcome-msg{
+    color:var(--brand-secondary);
+    margin-top: 5vw;
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    
+  }
+  .paragraph-under-header{
+    margin-top: -15px;
+    margin-left: 42vw;
+  }
+  .main-body{
+   background-color:var(--bg_body);
+   
+  }
+  
+  
+  .footer-paragraph{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer-paragraph ion-icon
+  {
+    color:var(--heart-color);
+  }
+  .details-section{
+    background-color:black;
+  }
+  .details-section h1{
+    color:var(--brand-secondary);
+    font-size: 20px;
+    margin-left: 18vw;
+    padding-top: 30px;
+  }
+  .details-section h2{
+    color:white;
+    font-weight: bold;
+    margin-left: 18vw;
+  
+  }
+  .details-section p{
+    color:white;
+    margin-left: 18vw;
+    padding-bottom: 20px;
+  }
+  
+  .details-section ion-icon{
+    color:goldenrod;
+  }
+  .sub-topics{
+    color:var(--body-text);
+    background-color: var(--bg_default);
+    border: 1px solid var(--lines-color);;
+    margin-left: 18vw;
+    width: 38vw;
+    margin-bottom: 30px;
+  }
+  .sub-topics h2{
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  .first-sub-topic ,.second-sub-topic,.third-sub-topic,.fourth-sub-topic,.fifth-sub-topic,.sexth-sub-topic{
+  border-top: 1px solid var(--lines-color);
+  padding-left: 20px;
+  font-weight: bold;
+  }
+  .first-sub-topic p, .second-sub-topic p,.third-sub-topic p,.fourth-sub-topic p,.fifth-sub-topic p,.sexth-sub-topic p{
+    display: inline-block;
+    }
+    
+  .first-sub-topic ion-icon,.second-sub-topic ion-icon,.third-sub-topic ion-icon,.fourth-sub-topic ion-icon,.fifth-sub-topic ion-icon,.sexth-sub-topic ion-icon{
+    display: inline-block; 
+    color: var(--brand-secondary);
+    font-size: 18px;
+  }
+  .details-box{
+    background-color: white;
+    position: absolute;
+    left: 58vw;
+    top:17vw;
+    margin-top: 20px;
+    border: 1px solid white;
+    
+  }
+  .details-box > p{
+    font-weight: bold;
+    margin-left: 9px;
+  }
+  .details-box img{
+    width: 15vw;
+    height: 15vw;
+  }
+  .interested-the-topic{
+    border: 1px solid #ededed;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-bottom: 10px;
+    padding-left: 9px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .Unlimited-credits-paragraph
+  {
+    text-align: center;
+    color: gray;
+  }
+  .interested-the-topic button{
+    color: white;
+    background-color: var(--brand-secondary);
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 11px;
+    margin-right: 3px;
+    width: 12vw;
+  }  
+  /* responsive from 320px to 480px */
+  @media(min-width:320px) and (max-width:480px)
+  {
+    .header-container .dark-mode-button{
+      margin-left: 15px;
+      margin-top: 30px;
+      font-size: 8px;
+      font-weight: bold;
+  }
+  .header-container .favourites-button
+  {
+      
+      margin-top: 30px;
+      font-size: 8px;
+      font-weight: bold;
+  }
+  .header-container  p{
+    margin-top: 30px;
+    
+  }
+  .triangle-blue {
+    margin-top: -18px;    
+  }
+  
+  .triangle-green {
+    margin-top: -29px;
+  }
+  .paragraph-under-header{
+    margin-top: -15px;
+    margin-left: 19vw;
+    font-size: 8px;
+  }
+  .details-section h1{
+    font-size: 11px;
+    margin-left: 6vw;
+    padding-top: 21px;
+  }
+  .details-section p{
+    margin-left: 6vw;
+    font-size:4px
+  }
+  .details-box{
+    left: 58vw;
+    top:43vw;
+    
+  }
+  .details-box > p{
+    font-weight: bold;
+    margin-left: 9px;
+    font-size: 8px;
+  }
+  
+  .interested-the-topic{
+    
+    font-size: 6px;
+  }
+  
+  .interested-the-topic button{
+    font-size: 6px;
+    width: 25vw;
+  } 
+  .sub-topics{
+   
+    margin-left: 4vw;
+    width: 49vw;
+  
+  }
+  .sub-topics h2{
+    font-size: 12px;
+  }
+  
+  .first-sub-topic p, .second-sub-topic p,.third-sub-topic p,.fourth-sub-topic p,.fifth-sub-topic p,.sexth-sub-topic p{
+    font-size: 5px;
+    }
+    
+  .first-sub-topic ion-icon,.second-sub-topic ion-icon,.third-sub-topic ion-icon,.fourth-sub-topic ion-icon,.fifth-sub-topic ion-icon,.sexth-sub-topic ion-icon{
+    font-size: 7px;
+  }
+  .details-box img {
+    width: 32vw;
+    
+  }
+  }
+    /* responsive from 481px to 768px */
+ @media (min-width: 481px) and (max-width: 768px) {
+  
+    .header-container .dark-mode-button{
+      margin-left: 25vw;
+  
+  }
+  .triangle-blue {
+    margin-top: -29px;
+    }
+  .triangle-green {
+    
+      margin-top: -39px;
+  }
+  .details-section h1{
+    font-size: 15px;
+    margin-left: 6vw;
+    padding-top: 21px;
+  }
+  .details-section p{
+    margin-left: 6vw;
+    font-size:6px
+  }
+  .paragraph-under-header{
+    margin-top: -15px;
+    margin-left: 30vw;
+    font-size: 10px;
+  }
+  
+  .details-box{
+    left: 58vw;
+    top:28vw;
+    
+  }
+  .details-box > p{
+    font-weight: bold;
+    margin-left: 9px;
+    font-size: 8px;
+  }
+  
+  .interested-the-topic{
+    font-size: 6px;
+  }
+  
+  .interested-the-topic button{
+    font-size: 6px;
+    width: 25vw;
+  } 
+  .sub-topics{
+    margin-left: 4vw;
+    width: 49vw;
+  }
+  .sub-topics h2{
+    font-size: 12px;
+  }
+  
+  .first-sub-topic p, .second-sub-topic p,.third-sub-topic p,.fourth-sub-topic p,.fifth-sub-topic p,.sexth-sub-topic p{
+    font-size: 8px;
+    }
+    
+  .first-sub-topic ion-icon,.second-sub-topic ion-icon,.third-sub-topic ion-icon,.fourth-sub-topic ion-icon,.fifth-sub-topic ion-icon,.sexth-sub-topic ion-icon{
+    font-size: 9px;
+  }
+  .details-box img {
+    width: 32vw;
+    }
+  }
+    /* responsive from 769px to 1024px */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .header-container .dark-mode-button{
+      margin-left: 52vw;
+  }
+    .triangle-blue {
+    margin-top: -38px;
+      }
+  
+    .triangle-green {
+    margin-top: -48px;
+  }
+  .paragraph-under-header{
+    margin-left: 38vw;
+  }
+  .details-section h1{
+    font-size: 19px;
+    margin-left: 6vw;
+    padding-top: 21px;
+  }
+  .details-section p{
+    margin-left: 6vw;
+    font-size:12px
+  }
+  .details-box{
+    left: 58vw;
+    top:23vw;
+    }
+  .details-box > p{
+    font-weight: bold;
+    margin-left: 9px;
+    font-size: 15px;
+  }
+  .interested-the-topic{
+    
+    font-size: 15px;
+  }
+  
+  .interested-the-topic button{
+    font-size: 10px;
+    width: 25vw;
+  } 
+  .sub-topics{
+   
+    margin-left: 4vw;
+    width: 49vw;
+  
+  }
+  .sub-topics h2{
+    font-size: 20px;
+  }
+  
+  .first-sub-topic p, .second-sub-topic p,.third-sub-topic p,.fourth-sub-topic p,.fifth-sub-topic p,.sexth-sub-topic p{
+    font-size: 15px;
+    }
+    
+  .first-sub-topic ion-icon,.second-sub-topic ion-icon,.third-sub-topic ion-icon,.fourth-sub-topic ion-icon,.fifth-sub-topic ion-icon,.sexth-sub-topic ion-icon{
+    font-size: 13px;
+  }
+  .details-box img {
+    width: 32vw;
+    
+  }
+  }
+    /* responsive more than 1024 */
+@media (min-width: 1025px) {
+  .details-box {
+      left: 70vw;
+      top: 19vw;
+     
+  }
+  .details-section p {
+    margin-left: 6vw;
+  }
+  .details-section h1 {
+    margin-left: 6vw;
+  }
+  .details-box img {
+    width: 24vw;
+  }
+  .details-box {
+    left: 69vw;
+    top: 22vw;
+  }
+  .sub-topics {
+    margin-left: 6vw;
+    width: 43vw;
+  }
+  .paragraph-under-header {
+    margin-left: 39vw;
+  }
+  .interested-the-topic button {
+    width: 19vw;
+  }
+  .the-welcome .welcome-msg {
+    margin-top: 6vw;
+    
+  }
+  }
+  
+  
+  
