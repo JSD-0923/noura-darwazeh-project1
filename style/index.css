@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #ffffff;
+  --bg_body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+  --author-color: gray;
+  --fav-icon-color: goldenrod;
+
+}
+
+.dark-mode {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #1a1a1a;
+  --bg_body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+  --heart-color: #dc143c;
+  --author-color: gray;
+  --fav-icon-color: goldenrod;
+}
+
+
+body {
+  font-family: 'Nunito Sans';
+  color: var(--body-text);
+  background-color: var(--bg_default);
+}
+
+.navbar-brand {
+  color: var(--brand-primary);
+
+}
+
+.triangle-container {
+  position: relative;
+  height: 20px;
+}
+
+.triangle-blue {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 89vw solid var(--brand-primary);
+  border-bottom: 4vw solid transparent;
+  border-top: 0px solid transparent;
+  z-index: 2;
+}
+
+.triangle-green {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-left: 110vw solid transparent;
+  border-top: 4vw solid var(--brand-secondary);
+  border-bottom: 0px solid transparent;
+  z-index: 1;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h3 {
+  color: var(--brand-secondary);
+}
+
+main {
+  background-color: var(--bg_body);
+}
+
+.card img {
+  height: 100px;
+}
+
+.card-body ion-icon {
+  color: var(--fav-icon-color);
+}
+
+.author {
+  color: var(--author-color);
+}
+
+footer {
+  background-color: var(--bg_body);
+}
+
+footer ion-icon {
+  color: var(--heart-color);
+}

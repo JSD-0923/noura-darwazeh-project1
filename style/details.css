@@ -1,0 +1,64 @@
+:root {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #ffffff;
+  --bg_body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+  --author-color: gray;
+  --fav-icon-color: goldenrod;
+  --deatils-color: #333333;
+  --deatils-span-color: white;
+}
+
+.dark-mode {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #1a1a1a;
+  --bg_body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+  --heart-color: #dc143c;
+  --deatils-color: #333333;
+}
+
+main {
+  min-height: calc(100vh - 211.58px);
+}
+
+.detalis-box {
+  background-color: var(--deatils-color);
+
+}
+
+.detalis-box p {
+  color: var(--brand-secondary);
+}
+
+.detalis-box span {
+  color: var(--deatils-span-color);
+}
+
+.detalis-box ion-icon {
+  color: var(--fav-icon-color);
+}
+
+.detalis-box button {
+  background-color: var(--brand-secondary);
+  border: none;
+}
+
+.sub-topics ion-icon {
+  color: var(--brand-secondary);
+}
+
+@media (max-width:900px) {
+  .custom-position {
+    position: static !important;
+    margin-top: 0;
+
+  }
+
+
+}
