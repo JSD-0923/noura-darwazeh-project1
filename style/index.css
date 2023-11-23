@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-primary: #0768ac;
+    --brand-secondary: #03c180;
+    --bg_default: #ffffff;
+    --bg_body: #f0f9ff;
+    --lines-color: #dddddd;
+    --body-text: #333333;
+    --heart-color: #dc143c;
+
+}
+
+.dark-mode {
+    --brand-primary: #0768ac;
+    --brand-secondary: #03c180;
+    --bg_default: #1a1a1a;
+    --bg_body: #282828;
+    --lines-color: #000000;
+    --body-text: #ededed;
+    --heart-color: #dc143c;
+}
+
+body {
+    font-family: 'Nunito Sans';
+    color: var(--body-text);
+    background-color: var(--bg_default);
+    height: 100vh;
+    /* display: grid;
+    place-items: center center; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+nav p {
+    color: var(--brand-primary);
+    font-weight: bold;
+}
+
+.buttons button {
+    border: 1px solid var(--lines-color);
+    border-radius: 5px;
+    background-color: var(--bg_default);
+    color: var(--body-text);
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.triangle-container {
+    position: relative;
+    height: 20px;
+}
+
+.triangle-blue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: 89vw solid var(--brand-primary);
+
+    border-bottom: 4vw solid transparent;
+    border-top: 0px solid transparent;
+    z-index: 2;
+}
+
+.triangle-green {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 110vw solid transparent;
+    border-top: 4vw solid var(--brand-secondary);
+    border-bottom: 0px solid transparent;
+    z-index: 1;
+}
+
+.welcome-section h2 {
+    padding-right: 13%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--brand-secondary);
+}
+
+.welcome-section {
+    /* background-color: #dc143c; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+
+}
+
+main {
+    background-color: var(--bg_body);
+    /* padding-top: 20px;
+    padding-left: 35px; */
+    
+}
+.section-search, .section-header, .section-cards{
+    padding-top: 20px;
+    padding-left: 35px;
+}
+
+.search {
+    /* background-color: blue; */
+    margin-bottom: 20px;
+    /* margin-left: 35px; */
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: 1px solid var(--lines-color);
+    background-color: var(--bg_default);
+    box-shadow: 0px 0px 10px var(--lines-color);
+    border-radius: 10px;
+}
+
+.icon-input {
+
+    width: 60%;
+    align-self: center;
+    display: flex;
+
+}
+input, select{
+background-color: var(--bg_default);
+color: var(--body-text);
+
+}
+.icon-input ion-icon {
+    align-self: flex-start;
+    margin-left: 5px;
+}
+
+input {
+    border: none;
+}
+
+.sortlabel-select,
+.filterlabel-select {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg_default);
+    border-left: 1px solid var(--lines-color);
+    padding-left: 5px;
+}
+
+.the-select {
+    display: flex;
+    gap: 4px
+}
+
+label {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+select {
+    border: none;
+    padding-right: 70px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 10px;
+    margin-top: 10px;
+    padding-right: 35px;
+
+}
+
+.card {
+    border: 1px solid var(--lines-color);
+    box-shadow: 0px 0px 10px var(--lines-color);
+    border-radius: 10px;
+    /* width: 285px; */
+    background-color: var(--bg_default);
+
+}
+
+.card-img {
+    height: 140px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-descreption {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.card-descreption p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.icon ion-icon {
+    color: goldenrod;
+    padding-top: 15px;
+    
+}
+
+.author {
+    color: gray;
+    font-weight: bold;
+}
+/* textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    
+  } */
+footer {
+    background-color: var(--bg_body);
+}
+
+.footer-paragraph {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer-paragraph ion-icon {
+    color: var(--heart-color);
+}
+
+/* .dark-mode{
+        background-color: black;
+
+}
+.dark-mode .buttons{
+    background-color: red;
+} */
+.hidden {
+    display: none;
+}

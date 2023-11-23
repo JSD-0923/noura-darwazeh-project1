@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link href="style/index.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="layout">
+        <header>
+            <section>
+                <nav>
+                    <p>Wep Topics</p>
+                    <div class="buttons">
+                        <button id="mybtn" onclick="darkmode()">
+                            <ion-icon class="moon" name="moon-outline"></ion-icon>
+                            <span id="dark-favourite-text">Dark Mode</span>
+                        </button>
+                        <button id="fav">
+                            <ion-icon class="heart" name="heart-outline"></ion-icon>
+                            <span>Favourites</span>
+                        </button>
+                    </div>
+                </nav>
+            </section>
+
+            <section>
+                <div class="triangle-container">
+                    <div class="triangle-blue"></div>
+                    <div class="triangle-green"></div>
+                </div>
+            </section>
+
+            <section>
+                <div class="welcome-section">
+                    <h2>Welcome to our webaite</h2>
+                    <p>We have a new design that's fresh, modern, and easy to use.</p>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="section-search">
+                <div class="search">
+                    <div class="icon-input">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input id="searchInput" type="text" placeholder="   Search the website...">
+                    </div>
+
+                    <div class="the-select">
+                        <div class="sortlabel-select">
+                            <label class="select-label" for="select"> Sort by:</label>
+                            <select class="select-op-sort-by" id="sortSelect">
+                                <option value="default">default</option>
+                                <option value="name">name</option>
+                                <option value="author">author</option>
+                            </select>
+                        </div>
+                        <div class="filterlabel-select">
+                            <label class="select-label" for="select"> Sort by:</label>
+                            <select class="select-op-sort-by">
+                                <option value="val1">Default</option>
+                                <option value="val2">1</option>
+                                <option value="val3">2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- للجافا سكربت -->
+            <div id="searchResults"></div>
+            <!-- خلصت جافا -->
+            <section class="section-header">
+                <h1>"24" Web Topics Found </h1>
+            </section>
+
+            <section class="section-cards">
+            <div class="cards" id="cards">
+                <!-- <div class="card">
+                    <div class="card-img">
+                        <img src="" alt="this is html">
+                    </div>
+                    <div class="card-description">
+                        <p></p>
+                        <div class="icon">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <p class="author"></p>
+                    </div>
+                </div> -->
+            </div>
+            </section>
+
+            <section>
+                <textarea id="favourite" class="hidden">Some text jfkjdkdkj...</textarea>
+            </section>
+
+        </main>
+        <footer>
+            <p class="footer-paragraph">Developed with <ion-icon name="heart"></ion-icon>&copy;2023</p>
+        </footer>
+        
+    </div>
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
